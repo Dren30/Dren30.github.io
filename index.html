@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 1 - Encriptador</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300&family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/encriptador.css">
+    <script src="js/encriptador.js" defer></script>
+</head>
+<body>
+    <header>
+        
+        <div class="header">
+            <img class="logo" src="img/Logo.png" alt="Logo de alura">
+            
+            <h1 class="texto-header">Encriptador</h1>
+        </div>
+    </header>
+    
+    <div class="container">
+        <main>
+
+            <section>
+
+                <form>
+                    <label for="mensaje"></label>
+                    <textarea class="mensaje" name="mensaje" id="mensaje" placeholder="Introduce el mensaje que desea encriptar o desencriptar aquí" cols="59" rows="10"></textarea>
+                </form>
+            
+
+                <div class="advertencia">
+                    
+                    <img src="img/Group.png" alt="Simbolo de advertencia" class="logo-advertencia">
+                    <p class="mensaje-advertencia">Solo letras minúsculas y sin acentos.</p>
+                </div>
+
+
+                <div class="caja-de-botones">
+                    <button type="button" class="boton-encriptar" onclick="encriptar()">Encriptar</button>
+                    <button type="button" class="boton-desencriptar" onclick="desencriptar()">Desencriptar</button>
+
+                </div>
+
+                
+
+            </section>
+
+            <section>
+                <form>
+                    <label for="resultado"></label>
+                    <textarea class="resultado" name="resultado" id="resultado" cols="18" rows="10"></textarea>
+                    <div id="mensaje-no-encontrado">
+                        <p class="no-mensaje">Ningún mensaje fue<br>encontrado</p>
+                        <p class="no-mensaje2">Ingresa el texto que desees encriptar o <br>desencriptar.</p>
+                    </div>
+                </form>
+
+                <div>
+                    <button type="button" class="boton-copiar" id="boton-copiar" onclick="copiar()">Copiar texto</button>
+                </div>
+
+
+
+            </section>
+
+
+
+        </main>
+
+        <footer class="footer-creditos">
+
+            <p>Schavitt Ureña <br>Alura 2023</p>
+            <a href="https://github.com/Dren30"><img src="/img/github-mark.png" alt="Logo de Github"></a>
+        
+        </footer>
+
+    </div>
+
+</body>
+</html>
